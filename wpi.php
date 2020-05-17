@@ -162,13 +162,9 @@ foreach($matches[1] as $key => $value){
         $release[] = $value;
     }
 }
+
 // no duplicates
 $release = array_unique($release);
-// get the names
-
-#echo "<pre>";
-#print_r($release);
-#echo "</pre>";
 
 ?>
 <!DOCTYPE html>
@@ -224,7 +220,6 @@ $release = array_unique($release);
     </div>
 </body>
 </html>
-
 <?php
 
 if (DEBUG) {
