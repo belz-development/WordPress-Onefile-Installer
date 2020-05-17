@@ -1,4 +1,4 @@
-# WordPress One File Installer 
+# WordPress Onefile Installer 
 Installs WordPress very easily and in just a few seconds on your webspace.
 
 1. download the "wpi.php" file
