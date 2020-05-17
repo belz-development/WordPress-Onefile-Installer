@@ -3,7 +3,7 @@
 /**
  * some defines
  */
-define("DEBUG", true);
+define("DEBUG", false);
 define("TITLE", "WordPress Onefile Installer");
 define("WP_VERSION_URL", "https://wordpress.org/news/2019/04/minimum-php-version-update/");
 define("WP_RELEASES_URL", "https://wordpress.org/download/releases/");
@@ -73,7 +73,7 @@ if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] != 'on') {
 /**
  * get URL
  */
-$url = 'http'.(isset($_SERVER['HTTPS'])?'s':'').'://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/';
+$url = 'http'.(isset($_SERVER['HTTPS'])?'s':'').'://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']);
 $msg['url'] = 'URL: ' . $url;
 
 /**
